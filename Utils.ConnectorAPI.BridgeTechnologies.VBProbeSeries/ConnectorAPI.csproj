@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net462</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<AssemblyName>Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries</AssemblyName>
+		<RootNamespace>Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries</RootNamespace>
+		<PackageVersion>1.0.1</PackageVersion>
+		<Version>1.0.1</Version>
+		<PackageTags>Skyline;DataMiner</PackageTags>
+		<PackageProjectUrl>https://skyline.be</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<PackageIcon>Icon.png</PackageIcon>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Authors>SkylineCommunications</Authors>
+		<Company>Skyline Communications</Company>
+		<Description></Description>
+	</PropertyGroup>
+	
+	<ItemGroup>
+	  <Compile Remove="AlarmThresholds\EthThresholds\Messages.cs" />
+	  <Compile Remove="AlarmThresholds\EtrThresholds\Messages.cs" />
+	  <Compile Remove="AlarmThresholds\PidThresholdsPresets\Messages.cs" />
+	  <Compile Remove="AlarmThresholds\PidThresholds\Messages.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="" />
+		<None Include="LICENSE.txt" Pack="true" PackagePath="" />
+		<None Include="nuget\Icon.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="Skyline.DataMiner.Core.InterAppCalls.Common" Version="1.0.0.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="AlarmThresholds\EthThresholds\" />
+	  <Folder Include="AlarmThresholds\EtrThresholds\" />
+	  <Folder Include="AlarmThresholds\PidThresholdsPresets\" />
+	  <Folder Include="AlarmThresholds\PidThresholds\" />
+	</ItemGroup>
+</Project>
