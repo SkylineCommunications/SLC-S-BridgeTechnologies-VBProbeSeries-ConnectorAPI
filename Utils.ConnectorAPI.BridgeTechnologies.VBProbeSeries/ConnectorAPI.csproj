@@ -17,7 +17,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Authors>SkylineCommunications</Authors>
 		<Company>Skyline Communications</Company>
-		<Description></Description>
+		<Description>Connector API (Inter-App Calls/Messages) for DataMiner elements running the 'Bridge Technologies VB Prove Series' connector.</Description>
 	</PropertyGroup>
 	
 	<ItemGroup>
