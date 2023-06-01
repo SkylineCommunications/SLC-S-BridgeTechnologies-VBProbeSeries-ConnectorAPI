@@ -7,9 +7,9 @@
 	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.OTT;
 	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.StrobeManager;
 
-	public static class IAC
+	public static class InterApp
 	{
-		public static List<Type> KnownTypes { get;  } = new List<Type>
+		public static List<Type> KnownTypes { get; } = new List<Type>
 		{
 			// Alarm Thresholds
 			////typeof(CreateEthThreshold),
