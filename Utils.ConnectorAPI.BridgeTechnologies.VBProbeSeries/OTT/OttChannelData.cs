@@ -2,8 +2,6 @@
 {
 	public class OttChannelData
 	{
-		public string Id { get; set; }
-
 		public string Name { get; set; }
 
 		public int? Engine { get; set; }
