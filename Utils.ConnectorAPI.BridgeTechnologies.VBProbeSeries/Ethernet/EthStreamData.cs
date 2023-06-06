@@ -71,13 +71,13 @@
 
 		public string SrtHost { get; set; }
 
-		public int SrtPort { get; set; }
+		public int? SrtPort { get; set; }
 
-		public SrtMode SrtMode { get; set; }
+		public SrtMode? SrtMode { get; set; }
 
 		public string SrtPassphrase { get; set; }
 
-		public int SrtLatency { get; set; }
+		public int? SrtLatency { get; set; }
 
 		public string ContentThresholds { get; set; }
 	}
