@@ -2,27 +2,26 @@
 {
 	public class OttChannelData
 	{
+		// General
 		public string Name { get; set; }
-
-		public int? Engine { get; set; }
-
-		public bool? Enable { get; set; }
 
 		public string Address { get; set; }
 
-		public string ContentThreshold { get; set; }
+		public bool? Enable { get; set; }
 
-		public string VbcThreshold { get; set; }
-
-		public string Threshold { get; set; }
-
-		public string PlayerUrl { get; set; }
-
-		public int? RoundTime { get; set; }
+		public int? Engine { get; set; }
 
 		public int? Page { get; set; }
 
+		public string Threshold { get; set; }
+
+		public string VbcThreshold { get; set; }
+
+		public string ContentThreshold { get; set; }
+
 		public int? MeasurementMode { get; set; }
+
+		public string PlayerUrl { get; set; }
 
 		public int? LiveTargetSegment { get; set; }
 
@@ -36,6 +35,7 @@
 
 		public bool? Alignment { get; set; }
 
+		// DRM
 		public int? DrmSystem { get; set; }
 
 		public string DrmHostname { get; set; }
@@ -54,10 +54,14 @@
 
 		public string FixedIv { get; set; }
 
+		// Advanced manifest
 		public bool? AdvancedManifest { get; set; }
 
 		public string Method { get; set; }
 
 		public string ContentType { get; set; }
+
+		// ?
+		public int? RoundTime { get; set; }
 	}
 }
