@@ -3,6 +3,7 @@
 	using System;
 	using System.Collections.Generic;
 
+	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.AlarmThresholds.EthThresholds;
 	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.Ethernet;
 	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.OTT;
 	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.StrobeManager;
@@ -12,12 +13,12 @@
 		public static List<Type> KnownTypes { get; } = new List<Type>
 		{
 			// Alarm Thresholds
-			////typeof(CreateEthThreshold),
-			////typeof(CreateEthThresholdResult),
-			////typeof(EditEthThreshold),
-			////typeof(EditEthThresholdResult),
-			////typeof(DeleteEthThresholds),
-			////typeof(DeleteEthThresholdsResult),
+			typeof(CreateEthThreshold),
+			typeof(CreateEthThresholdResult),
+			typeof(EditEthThreshold),
+			typeof(EditEthThresholdResult),
+			typeof(DeleteEthThresholds),
+			typeof(DeleteEthThresholdsResult),
 
 			////typeof(CreateEtrThreshold),
 			////typeof(CreateEtrThresholdResult),
