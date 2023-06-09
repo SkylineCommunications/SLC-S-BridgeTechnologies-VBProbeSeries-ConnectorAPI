@@ -26,7 +26,7 @@
 
 	public class EditOttChannel : Message
 	{
-		public string Id { get; set; }
+		public string ChannelId { get; set; }
 
 		public OttChannelData ChannelData { get; set; }
 	}
@@ -43,7 +43,7 @@
 
 		public EditOttChannel Request { get; set; }
 
-		public string Id { get; set; }
+		public string ChannelId { get; set; }
 	}
 
 	public class DeleteOttChannels : Message

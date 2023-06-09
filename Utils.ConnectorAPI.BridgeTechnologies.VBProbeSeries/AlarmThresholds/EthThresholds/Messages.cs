@@ -6,7 +6,7 @@
 
 	public class CreateEthThreshold : Message
 	{
-		public Preset Preset { get; set; }
+		public EthThreshold Threshold { get; set; }
 	}
 
 	public class CreateEthThresholdResult : Message
@@ -26,9 +26,9 @@
 
 	public class EditEthThreshold : Message
 	{
-		public string PresetToUpdateName { get; set; }
+		public string ThresholdToUpdateName { get; set; }
 
-		public Preset Preset { get; set; }
+		public EthThreshold Threshold { get; set; }
 	}
 
 	public class EditEthThresholdResult : Message
@@ -43,19 +43,19 @@
 
 		public EditEthThreshold Request { get; set; }
 
-		public string PresetId { get; set; }
+		public string ThresholdId { get; set; }
 	}
 
 	public class DeleteEthThresholds : Message
 	{
-		public IEnumerable<string> PresetNamesToDelete { get; set; }
+		public IEnumerable<string> ThresholdToDeleteNames { get; set; }
 	}
 
 	public class DeleteEthThresholdsResult : Message
 	{
 		public bool IsRequestValid { get; set; }
 
-		public bool AreAllStreamsDeleted { get; set; }
+		public bool AreAllThresholdsDeleted { get; set; }
 
 		public string Description { get; set; }
 
