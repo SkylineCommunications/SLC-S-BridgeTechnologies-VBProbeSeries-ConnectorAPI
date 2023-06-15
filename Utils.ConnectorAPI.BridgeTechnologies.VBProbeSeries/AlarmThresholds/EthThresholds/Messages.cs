@@ -6,7 +6,7 @@
 
 	public class CreateEthThreshold : Message
 	{
-		public EthThreshold Threshold { get; set; }
+		public EthThresholdData ThresholdData { get; set; }
 	}
 
 	public class CreateEthThresholdResult : Message
@@ -28,7 +28,7 @@
 	{
 		public string ThresholdToUpdateName { get; set; }
 
-		public EthThreshold Threshold { get; set; }
+		public EthThresholdData ThresholdData { get; set; }
 	}
 
 	public class EditEthThresholdResult : Message

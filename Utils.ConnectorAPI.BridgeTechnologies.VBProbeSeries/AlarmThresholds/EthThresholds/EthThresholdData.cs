@@ -1,6 +1,6 @@
 ﻿namespace Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.AlarmThresholds.EthThresholds
 {
-	public class EthThreshold
+	public class EthThresholdData
 	{
 		public string Name { get; set; }
 
