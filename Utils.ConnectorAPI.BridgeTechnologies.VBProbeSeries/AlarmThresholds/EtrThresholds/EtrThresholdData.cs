@@ -6,7 +6,7 @@
 
 		public string Description { get; set; }
 
-		public EtrAnalyzingMode AnalyzingMode { get; set; }
+		public EtrAnalyzingMode? AnalyzingMode { get; set; }
 
 		/// <summary>
 		/// Time (in seconds) the probe will be tuned to the frequency to check the ETR 290 parameters.
