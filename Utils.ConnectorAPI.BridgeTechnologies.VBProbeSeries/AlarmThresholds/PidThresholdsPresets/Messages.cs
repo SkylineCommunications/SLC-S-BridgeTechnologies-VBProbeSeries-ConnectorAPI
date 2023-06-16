@@ -4,12 +4,12 @@
 
 	using Skyline.DataMiner.Core.InterAppCalls.Common.CallSingle;
 
-	public class CreateSubPidThreshold : Message
+	public class CreatePidThresholdPreset : Message
 	{
 		public PidThresholdPresetData ThresholdPresetData { get; set; }
 	}
 
-	public class CreateSubPidThresholdResult : Message
+	public class CreatePidThresholdPresetResult : Message
 	{
 		public bool IsRequestValid { get; set; }
 
@@ -19,20 +19,20 @@
 
 		public string Description { get; set; }
 
-		public CreateSubPidThreshold Request { get; set; }
+		public CreatePidThresholdPreset Request { get; set; }
 
 		// PresetId not (yet) returned as it is not that straight forward to define which preset is the new one since there is no identifier for it (unique name or so)
 		////public string ThresholdID { get; set; }
 	}
 
-	public class EditSubPidThreshold : Message
+	public class EditPidThresholdPreset : Message
 	{
 		public string ThresholdPresetKey { get; set; }
 
 		public PidThresholdPresetData ThresholdPresetData { get; set; }
 	}
 
-	public class EditSubPidThresholdResult : Message
+	public class EditPidThresholdPresetResult : Message
 	{
 		public bool IsRequestValid { get; set; }
 
@@ -42,19 +42,19 @@
 
 		public string Description { get; set; }
 
-		public EditSubPidThreshold Request { get; set; }
+		public EditPidThresholdPreset Request { get; set; }
 
 		public string ThresholdId { get; set; }
 	}
 
-	public class DeleteSubPidThresholds : Message
+	public class DeletePidThresholdPresets : Message
 	{
-		public string PresetName { get; set; }
+		public string ThresholdName { get; set; }
 
 		public IEnumerable<PidThresholdPresetData> PresetsToDelete { get; set; }
 	}
 
-	public class DeleteSubPidThresholdsResult : Message
+	public class DeletePidThresholdPresetsResult : Message
 	{
 		public bool IsRequestValid { get; set; }
 
@@ -62,6 +62,6 @@
 
 		public string Description { get; set; }
 
-		public DeleteSubPidThresholds Request { get; set; }
+		public DeletePidThresholdPresets Request { get; set; }
 	}
 }

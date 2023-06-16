@@ -44,7 +44,7 @@
 		public bool? MonitorMaxBitrate { get; set; }
 
 		/// <summary>
-		/// The max bandwidth allowed for the PID in kbps.
+		/// The max bandwidth allowed for the PID in Mbps.
 		/// </summary>
 		public string MaxBitrateValue { get; set; }
 

@@ -36,12 +36,13 @@
 			typeof(EditPidThresholdResult),
 			typeof(DeletePidThresholds),
 			typeof(DeletePidThresholdsResult),
-			typeof(CreateSubPidThreshold),
-			typeof(CreateSubPidThresholdResult),
-			typeof(EditSubPidThreshold),
-			typeof(EditSubPidThresholdResult),
-			typeof(DeleteSubPidThresholds),
-			typeof(DeleteSubPidThresholdsResult),
+
+			typeof(CreatePidThresholdPreset),
+			typeof(CreatePidThresholdPresetResult),
+			typeof(EditPidThresholdPreset),
+			typeof(EditPidThresholdPresetResult),
+			typeof(DeletePidThresholdPresets),
+			typeof(DeletePidThresholdPresetsResult),
 
 			// Ethernet
 			typeof(CreateEthStream),
