@@ -3,11 +3,10 @@
 	using System.Collections.Generic;
 
 	using Skyline.DataMiner.Core.InterAppCalls.Common.CallSingle;
-	using Skyline.Protocol.Tables.AlarmThresholds.PidSub;
 
 	public class CreateSubPidThreshold : Message
 	{
-		public Preset Preset { get; set; }
+		public PidThresholdPresetData ThresholdPresetData { get; set; }
 	}
 
 	public class CreateSubPidThresholdResult : Message
@@ -28,9 +27,9 @@
 
 	public class EditSubPidThreshold : Message
 	{
-		public string PresetKey { get; set; }
+		public string ThresholdPresetKey { get; set; }
 
-		public Preset Preset { get; set; }
+		public PidThresholdPresetData ThresholdPresetData { get; set; }
 	}
 
 	public class EditSubPidThresholdResult : Message
@@ -45,21 +44,21 @@
 
 		public EditSubPidThreshold Request { get; set; }
 
-		public string PresetId { get; set; }
+		public string ThresholdId { get; set; }
 	}
 
 	public class DeleteSubPidThresholds : Message
 	{
 		public string PresetName { get; set; }
 
-		public IEnumerable<PidPreset> PresetsToDelete { get; set; }
+		public IEnumerable<PidThresholdPresetData> PresetsToDelete { get; set; }
 	}
 
 	public class DeleteSubPidThresholdsResult : Message
 	{
 		public bool IsRequestValid { get; set; }
 
-		public bool AreAllStreamsDeleted { get; set; }
+		public bool AreAllThresholdPresetsDeleted { get; set; }
 
 		public string Description { get; set; }
 

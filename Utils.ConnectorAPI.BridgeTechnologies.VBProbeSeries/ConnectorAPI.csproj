@@ -5,7 +5,7 @@
 		<Nullable>disable</Nullable>
 		<AssemblyName>Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries</AssemblyName>
 		<RootNamespace>Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries</RootNamespace>
-		<PackageVersion>1.0.1-test9</PackageVersion>
+		<PackageVersion>1.0.1-testC</PackageVersion>
 		<Version>1.0.1</Version>
 		<PackageTags>Skyline;DataMiner</PackageTags>
 		<PackageProjectUrl>https://skyline.be</PackageProjectUrl>
@@ -19,11 +19,6 @@
 		<Company>Skyline Communications</Company>
 		<Description>Connector API (Inter-App Calls/Messages) for DataMiner elements running the 'Bridge Technologies VB Prove Series' connector.</Description>
 	</PropertyGroup>
-	
-	<ItemGroup>
-	  <Compile Remove="AlarmThresholds\PidThresholdsPresets\Messages.cs" />
-	  <Compile Remove="AlarmThresholds\PidThresholds\Messages.cs" />
-	</ItemGroup>
 
 	<ItemGroup>
 		<None Include="README.md" Pack="true" PackagePath="" />
@@ -33,10 +28,5 @@
 
 	<ItemGroup>
 	  <PackageReference Include="Skyline.DataMiner.Core.InterAppCalls.Common" Version="1.0.0.2" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="AlarmThresholds\PidThresholdsPresets\" />
-	  <Folder Include="AlarmThresholds\PidThresholds\" />
 	</ItemGroup>
 </Project>

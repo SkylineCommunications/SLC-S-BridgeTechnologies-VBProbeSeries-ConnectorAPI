@@ -4,6 +4,9 @@
 	using System.Collections.Generic;
 
 	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.AlarmThresholds.EthThresholds;
+	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.AlarmThresholds.EtrThresholds;
+	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.AlarmThresholds.PidThresholds;
+	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.AlarmThresholds.PidThresholdsPresets;
 	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.Ethernet;
 	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.OTT;
 	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.StrobeManager;
@@ -20,25 +23,25 @@
 			typeof(DeleteEthThresholds),
 			typeof(DeleteEthThresholdsResult),
 
-			////typeof(CreateEtrThreshold),
-			////typeof(CreateEtrThresholdResult),
-			////typeof(EditEtrThreshold),
-			////typeof(EditEtrThresholdResult),
-			////typeof(DeleteEtrThresholds),
-			////typeof(DeleteEtrThresholdsResult),
+			typeof(CreateEtrThreshold),
+			typeof(CreateEtrThresholdResult),
+			typeof(EditEtrThreshold),
+			typeof(EditEtrThresholdResult),
+			typeof(DeleteEtrThresholds),
+			typeof(DeleteEtrThresholdsResult),
 
-			////typeof(CreatePidThreshold),
-			////typeof(CreatePidThresholdResult),
-			////typeof(EditPidThreshold),
-			////typeof(EditPidThresholdResult),
-			////typeof(DeletePidThresholds),
-			////typeof(DeletePidThresholdsResult),
-			////typeof(CreateSubPidThreshold),
-			////typeof(CreateSubPidThresholdResult),
-			////typeof(EditSubPidThreshold),
-			////typeof(EditSubPidThresholdResult),
-			////typeof(DeleteSubPidThresholds),
-			////typeof(DeleteSubPidThresholdsResult),
+			typeof(CreatePidThreshold),
+			typeof(CreatePidThresholdResult),
+			typeof(EditPidThreshold),
+			typeof(EditPidThresholdResult),
+			typeof(DeletePidThresholds),
+			typeof(DeletePidThresholdsResult),
+			typeof(CreateSubPidThreshold),
+			typeof(CreateSubPidThresholdResult),
+			typeof(EditSubPidThreshold),
+			typeof(EditSubPidThresholdResult),
+			typeof(DeleteSubPidThresholds),
+			typeof(DeleteSubPidThresholdsResult),
 
 			// Ethernet
 			typeof(CreateEthStream),
