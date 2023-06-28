@@ -2,12 +2,7 @@
 {
 	public class PidThresholdPresetData
 	{
-		/// <summary>
-		/// The name of the PID Threshold the preset belongs to.
-		/// </summary>
-		public string ThresholdName { get; set; }
-
-		// Preset
+		#region preset
 		public PresetType? Type { get; set; }
 
 		/// <summary>
@@ -15,9 +10,9 @@
 		/// </summary>
 		public string Pid { get; set; }
 
-		/// <summary>
-		/// The description of the PIDs this preset relates to.
-		/// </summary>
+		/////// <summary>
+		/////// The description of the PIDs this preset relates to.
+		/////// </summary>
 		////public string PidDescription { get; set; }
 
 		/// <summary>
@@ -31,29 +26,38 @@
 		public string RequiredLanguage { get; set; }
 
 		public Scrambling? MonitorScrambling { get; set; }
+		#endregion
 
-		// Min Bit Rate
-		public bool? MonitorMinBitrate { get; set; }
+		#region Min Bit Rate
+		/// <summary>
+		/// Allows to enable/disable the Min Bit Rate check.
+		/// </summary>
+		public bool? MonitorMinBitRate { get; set; }
 
 		/// <summary>
 		/// The min bandwidth allowed for the PID in kbps.
 		/// </summary>
-		public string MinBitrateValue { get; set; }
+		public string MinBitRateValue { get; set; }
+		#endregion
 
-		// Max Bit Rate
-		public bool? MonitorMaxBitrate { get; set; }
+		#region Max Bit Rate
+		/// <summary>
+		/// Allows to enable/disable the Max Bit Rate check.
+		/// </summary>
+		public bool? MonitorMaxBitRate { get; set; }
 
 		/// <summary>
 		/// The max bandwidth allowed for the PID in Mbps.
 		/// </summary>
-		public string MaxBitrateValue { get; set; }
+		public string MaxBitRateValue { get; set; }
+		#endregion
 
+		#region Ignore
 		/// <summary>
 		/// Allows to configure when PCR Errors should be ignored via schedule name.
 		/// </summary>
 		public string IgnorePcrErrorsSchedule { get; set; }
 
-		// Ignore
 		/// <summary>
 		/// Allows to configure when CC Errors should be ignored via schedule name.
 		/// </summary>
@@ -73,5 +77,6 @@
 		/// Allows to configure when All Errors should be ignored via schedule name.
 		/// </summary>
 		public string IgnoreAll { get; set; }
+		#endregion
 	}
 }

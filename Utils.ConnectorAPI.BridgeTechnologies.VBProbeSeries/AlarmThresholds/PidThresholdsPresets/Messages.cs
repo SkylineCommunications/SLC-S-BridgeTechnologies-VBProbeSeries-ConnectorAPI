@@ -6,6 +6,8 @@
 
 	public class CreatePidThresholdPreset : Message
 	{
+		public string ThresholdName { get; set; }
+
 		public PidThresholdPresetData ThresholdPresetData { get; set; }
 	}
 
@@ -44,14 +46,12 @@
 
 		public EditPidThresholdPreset Request { get; set; }
 
-		public string ThresholdId { get; set; }
+		public string ThresholdPresetKey { get; set; }
 	}
 
 	public class DeletePidThresholdPresets : Message
 	{
-		public string ThresholdName { get; set; }
-
-		public IEnumerable<PidThresholdPresetData> PresetsToDelete { get; set; }
+		public IEnumerable<string> ThresholdPresetKeys { get; set; }
 	}
 
 	public class DeletePidThresholdPresetsResult : Message
@@ -63,5 +63,11 @@
 		public string Description { get; set; }
 
 		public DeletePidThresholdPresets Request { get; set; }
+
+		public List<string> DeletedKeys { get; set; }
+
+		public List<string> FoundButNotDeletedKeys { get; set; }
+
+		public List<string> NotFoundKeys { get; set; }
 	}
 }
