@@ -5,7 +5,7 @@
 		<Nullable>disable</Nullable>
 		<AssemblyName>Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries</AssemblyName>
 		<RootNamespace>Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries</RootNamespace>
-		<PackageVersion>1.0.1-testI</PackageVersion>
+		<PackageVersion>1.0.1-testJ</PackageVersion>
 		<Version>1.0.1</Version>
 		<PackageTags>Skyline;DataMiner</PackageTags>
 		<PackageProjectUrl>https://skyline.be</PackageProjectUrl>

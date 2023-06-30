@@ -74,7 +74,7 @@
 		public string ThresholdPresetKey { get; set; }
 	}
 
-	public class DeletePidThresholdPresets : Message
+	public class DeletePidThresholdPreset : Message
 	{
 		/// <summary>
 		/// The key of the threshold preset to delete.
@@ -101,20 +101,14 @@
 		public PidThresholdPresetData ThresholdPresetData { get; set; }
 	}
 
-	public class DeletePidThresholdPresetsResult : Message
+	public class DeletePidThresholdPresetResult : Message
 	{
 		public bool IsRequestValid { get; set; }
 
-		public bool AreAllThresholdPresetsDeleted { get; set; }
+		public bool IsThresholdPresetDeleted { get; set; }
 
 		public string Description { get; set; }
 
-		public DeletePidThresholdPresets Request { get; set; }
-
-		public List<string> DeletedKeys { get; set; }
-
-		public List<string> FoundButNotDeletedKeys { get; set; }
-
-		public List<string> NotFoundKeys { get; set; }
+		public DeletePidThresholdPreset Request { get; set; }
 	}
 }

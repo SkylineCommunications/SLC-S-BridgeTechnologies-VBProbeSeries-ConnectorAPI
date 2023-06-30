@@ -40,8 +40,8 @@
 			typeof(CreatePidThresholdPresetResult),
 			typeof(EditPidThresholdPreset),
 			typeof(EditPidThresholdPresetResult),
-			typeof(DeletePidThresholdPresets),
-			typeof(DeletePidThresholdPresetsResult),
+			typeof(DeletePidThresholdPreset),
+			typeof(DeletePidThresholdPresetResult),
 
 			// Ethernet
 			typeof(CreateEthStream),
