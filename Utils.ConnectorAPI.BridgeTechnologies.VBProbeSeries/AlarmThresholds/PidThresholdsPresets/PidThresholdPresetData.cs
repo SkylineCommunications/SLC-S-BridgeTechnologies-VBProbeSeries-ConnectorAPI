@@ -10,10 +10,10 @@
 		/// </summary>
 		public string Pid { get; set; }
 
-		/////// <summary>
-		/////// The description of the PIDs this preset relates to.
-		/////// </summary>
-		////public string PidDescription { get; set; }
+		/// <summary>
+		/// The description of the PIDs this preset relates to.
+		/// </summary>
+		public string PidDescription { get; set; }
 
 		/// <summary>
 		/// Allows to enable/disable the PID presence check.

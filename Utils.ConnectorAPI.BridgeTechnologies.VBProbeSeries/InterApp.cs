@@ -9,7 +9,6 @@
 	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.AlarmThresholds.PidThresholdsPresets;
 	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.Ethernet;
 	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.OTT;
-	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.StrobeManager;
 
 	public static class InterApp
 	{
@@ -59,10 +58,6 @@
 			typeof(EditOttChannelResult),
 			typeof(DeleteOttChannels),
 			typeof(DeleteOttChannelsResult),
-
-			// Strobe Manager
-			typeof(CreateBtStrobeMgrFilter),
-			typeof(RemoveBtStrobeMgrFilter),
 		};
 	}
 }

@@ -29,9 +29,34 @@
 
 	public class EditPidThresholdPreset : Message
 	{
+		/// <summary>
+		/// The key of the threshold preset to edit.
+		/// Note that in order to identify the threshold preset to be edited, you have 2 options:
+		/// - Either provide the <see cref="ThresholdPresetKey"/>.
+		/// - Either provide the <see cref="ThresholdName"/> AND the full <see cref="ThresholdPresetCurrentData"/>.
+		/// </summary>
 		public string ThresholdPresetKey { get; set; }
 
-		public PidThresholdPresetData ThresholdPresetData { get; set; }
+		/// <summary>
+		/// The name of the threshold to which belongs the threshold preset to edit.
+		/// Note that in order to identify the threshold preset to be edited, you have 2 options:
+		/// - Either provide the <see cref="ThresholdPresetKey"/>.
+		/// - Either provide the <see cref="ThresholdName"/> AND the full <see cref="ThresholdPresetCurrentData"/>.
+		/// </summary>
+		public string ThresholdName { get; set; }
+
+		/// <summary>
+		/// The current data of the threshold preset to edit.
+		/// Note that in order to identify the threshold preset to be edited, you have 2 options:
+		/// - Either provide the <see cref="ThresholdPresetKey"/>.
+		/// - Either provide the <see cref="ThresholdName"/> AND the full <see cref="ThresholdPresetCurrentData"/>.
+		/// </summary>
+		public PidThresholdPresetData ThresholdPresetCurrentData { get; set; }
+
+		/// <summary>
+		/// The new desired data for the threshold preset to edit.
+		/// </summary>
+		public PidThresholdPresetData ThresholdPresetNewData { get; set; }
 	}
 
 	public class EditPidThresholdPresetResult : Message
@@ -51,7 +76,29 @@
 
 	public class DeletePidThresholdPresets : Message
 	{
-		public IEnumerable<string> ThresholdPresetKeys { get; set; }
+		/// <summary>
+		/// The key of the threshold preset to delete.
+		/// Note that in order to identify the threshold preset to be deleted, you have 2 options:
+		/// - Either provide the <see cref="ThresholdPresetKey"/>.
+		/// - Either provide the <see cref="ThresholdName"/> AND the full <see cref="ThresholdPresetData"/>.
+		/// </summary>
+		public string ThresholdPresetKey { get; set; }
+
+		/// <summary>
+		/// The name of the threshold to which belongs the threshold preset to delete.
+		/// Note that in order to identify the threshold preset to be deleted, you have 2 options:
+		/// - Either provide the <see cref="ThresholdPresetKey"/>.
+		/// - Either provide the <see cref="ThresholdName"/> AND the full <see cref="ThresholdPresetData"/>.
+		/// </summary>
+		public string ThresholdName { get; set; }
+
+		/// <summary>
+		/// The current data of the threshold preset to delete.
+		/// Note that in order to identify the threshold preset to be deleted, you have 2 options:
+		/// - Either provide the <see cref="ThresholdPresetKey"/>.
+		/// - Either provide the <see cref="ThresholdName"/> AND the full <see cref="ThresholdPresetData"/>.
+		/// </summary>
+		public PidThresholdPresetData ThresholdPresetData { get; set; }
 	}
 
 	public class DeletePidThresholdPresetsResult : Message
