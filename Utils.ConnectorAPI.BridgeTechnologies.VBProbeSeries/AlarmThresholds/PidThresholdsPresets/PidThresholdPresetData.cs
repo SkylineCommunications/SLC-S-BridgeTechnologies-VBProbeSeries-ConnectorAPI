@@ -37,7 +37,7 @@
 		/// <summary>
 		/// The min bandwidth allowed for the PID in kbps.
 		/// </summary>
-		public string MinBitRateValue { get; set; }
+		public double? MinBitRateValue { get; set; }
 		#endregion
 
 		#region Max Bit Rate
@@ -49,7 +49,7 @@
 		/// <summary>
 		/// The max bandwidth allowed for the PID in Mbps.
 		/// </summary>
-		public string MaxBitRateValue { get; set; }
+		public double? MaxBitRateValue { get; set; }
 		#endregion
 
 		#region Ignore
