@@ -3,8 +3,8 @@
 		<TargetFramework>net462</TargetFramework>
 		<ImplicitUsings>disable</ImplicitUsings>
 		<Nullable>disable</Nullable>
-		<AssemblyName>Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries</AssemblyName>
-		<RootNamespace>Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries</RootNamespace>
+		<AssemblyName>Skyline.DataMiner.ConnectorAPI.BridgeTechnologies.VBProbeSeries</AssemblyName>
+		<RootNamespace>Skyline.DataMiner.ConnectorAPI.BridgeTechnologies.VBProbeSeries</RootNamespace>
 		<PackageVersion>1.0.1-testK</PackageVersion>
 		<Version>1.0.1</Version>
 		<PackageTags>Skyline;DataMiner</PackageTags>

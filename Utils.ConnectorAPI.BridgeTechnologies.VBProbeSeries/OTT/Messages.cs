@@ -1,4 +1,4 @@
-﻿namespace Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.OTT
+﻿namespace Skyline.DataMiner.ConnectorAPI.BridgeTechnologies.VBProbeSeries.OTT
 {
 	using System.Collections.Generic;
 

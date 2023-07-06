@@ -1,14 +1,14 @@
-﻿namespace Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries
+﻿namespace Skyline.DataMiner.ConnectorAPI.BridgeTechnologies.VBProbeSeries
 {
 	using System;
 	using System.Collections.Generic;
 
-	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.AlarmThresholds.EthThresholds;
-	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.AlarmThresholds.EtrThresholds;
-	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.AlarmThresholds.PidThresholds;
-	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.AlarmThresholds.PidThresholdsPresets;
-	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.Ethernet;
-	using Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.OTT;
+	using Skyline.DataMiner.ConnectorAPI.BridgeTechnologies.VBProbeSeries.AlarmThresholds.EthThresholds;
+	using Skyline.DataMiner.ConnectorAPI.BridgeTechnologies.VBProbeSeries.AlarmThresholds.EtrThresholds;
+	using Skyline.DataMiner.ConnectorAPI.BridgeTechnologies.VBProbeSeries.AlarmThresholds.PidThresholds;
+	using Skyline.DataMiner.ConnectorAPI.BridgeTechnologies.VBProbeSeries.AlarmThresholds.PidThresholdsPresets;
+	using Skyline.DataMiner.ConnectorAPI.BridgeTechnologies.VBProbeSeries.Ethernet;
+	using Skyline.DataMiner.ConnectorAPI.BridgeTechnologies.VBProbeSeries.OTT;
 
 	public static class InterApp
 	{
@@ -43,7 +43,7 @@
 			typeof(DeletePidThresholdPreset),
 			typeof(DeletePidThresholdPresetResult),
 
-			// Ethernet
+			// Ethernet Streams
 			typeof(CreateEthStream),
 			typeof(CreateEthStreamResult),
 			typeof(EditEthStream),
@@ -51,7 +51,7 @@
 			typeof(DeleteEthStreams),
 			typeof(DeleteEthStreamsResult),
 
-			// OTT
+			// OTT Channels
 			typeof(CreateOttChannel),
 			typeof(CreateOttChannelResult),
 			typeof(EditOttChannel),

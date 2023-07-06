@@ -1,4 +1,4 @@
-﻿namespace Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries.Ethernet
+﻿namespace Skyline.DataMiner.ConnectorAPI.BridgeTechnologies.VBProbeSeries.Ethernet
 {
 	using System.Collections.Generic;
 

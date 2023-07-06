@@ -1,4 +1,4 @@
-# Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries
+# Skyline.DataMiner.ConnectorAPI.BridgeTechnologies.VBProbeSeries
 
 ## About
 

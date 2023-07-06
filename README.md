@@ -1,4 +1,4 @@
-# Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries
+# Skyline.DataMiner.ConnectorAPI.BridgeTechnologies.VBProbeSeries
 
 ## About
 
@@ -6,7 +6,7 @@
 
 ## Projects
 
-* For more information about Skyline.DataMiner.Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries, see [Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries/README.md](Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries/README.md).
+* For more information about Skyline.DataMiner.ConnectorAPI.BridgeTechnologies.VBProbeSeries, see [Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries/README.md](Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries/README.md).
 
 ### About DataMiner
 
