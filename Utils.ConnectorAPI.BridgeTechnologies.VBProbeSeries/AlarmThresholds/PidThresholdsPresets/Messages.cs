@@ -4,6 +4,9 @@
 
 	using Skyline.DataMiner.Core.InterAppCalls.Common.CallSingle;
 
+	/// <summary>
+	/// Inter-App Message allowing to add new entries to the PID Threshold Presets table.
+	/// </summary>
 	public class CreatePidThresholdPreset : Message
 	{
 		public string ThresholdName { get; set; }
@@ -27,6 +30,9 @@
 		////public string ThresholdID { get; set; }
 	}
 
+	/// <summary>
+	/// Inter-App Message allowing to edit existing entries from the PID Threshold Presets table.
+	/// </summary>
 	public class EditPidThresholdPreset : Message
 	{
 		/// <summary>
@@ -74,6 +80,9 @@
 		public string ThresholdPresetKey { get; set; }
 	}
 
+	/// <summary>
+	/// Inter-App Message allowing to delete existing entries from the PID Threshold Presets table.
+	/// </summary>
 	public class DeletePidThresholdPreset : Message
 	{
 		/// <summary>

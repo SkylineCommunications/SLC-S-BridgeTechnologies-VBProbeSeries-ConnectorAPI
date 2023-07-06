@@ -4,6 +4,9 @@
 
 	using Skyline.DataMiner.Core.InterAppCalls.Common.CallSingle;
 
+	/// <summary>
+	/// Inter-App Message allowing to add new entries to the ETR Thresholds table.
+	/// </summary>
 	public class CreateEtrThreshold : Message
 	{
 		public EtrThresholdData ThresholdData { get; set; }
@@ -24,6 +27,9 @@
 		public string ThresholdID { get; set; }
 	}
 
+	/// <summary>
+	/// Inter-App Message allowing to edit existing entries from the ETR Thresholds table.
+	/// </summary>
 	public class EditEtrThreshold : Message
 	{
 		public string ThresholdToUpdateName { get; set; }
@@ -46,6 +52,9 @@
 		public string ThresholdId { get; set; }
 	}
 
+	/// <summary>
+	/// Inter-App Message allowing to delete existing entries from the ETR Thresholds table.
+	/// </summary>
 	public class DeleteEtrThresholds : Message
 	{
 		public IEnumerable<string> ThresholdToDeleteNames { get; set; }

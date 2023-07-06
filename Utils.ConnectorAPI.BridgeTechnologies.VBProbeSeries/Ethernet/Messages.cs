@@ -4,6 +4,9 @@
 
 	using Skyline.DataMiner.Core.InterAppCalls.Common.CallSingle;
 
+	/// <summary>
+	/// Inter-App Message allowing to add new entries to the Ethernet Available Streams table.
+	/// </summary>
 	public class CreateEthStream : Message
 	{
 		public EthStreamData StreamData { get; set; }
@@ -26,6 +29,9 @@
 		public int StreamID { get; set; }
 	}
 
+	/// <summary>
+	/// Inter-App Message allowing to edit existing entries from the Ethernet Available Streams table.
+	/// </summary>
 	public class EditEthStream : Message
 	{
 		public string Key { get; set; }
@@ -48,6 +54,9 @@
 		public string StreamKey { get; set; }
 	}
 
+	/// <summary>
+	/// Inter-App Message allowing to delete existing entries from the Ethernet Available Streams table.
+	/// </summary>
 	public class DeleteEthStreams : Message
 	{
 		public string[] StreamKeys { get; set; }

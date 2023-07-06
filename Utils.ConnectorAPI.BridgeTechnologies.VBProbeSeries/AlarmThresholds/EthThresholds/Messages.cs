@@ -4,6 +4,9 @@
 
 	using Skyline.DataMiner.Core.InterAppCalls.Common.CallSingle;
 
+	/// <summary>
+	/// Inter-App Message allowing to add new entries to the Ethernet Thresholds table.
+	/// </summary>
 	public class CreateEthThreshold : Message
 	{
 		public EthThresholdData ThresholdData { get; set; }
@@ -24,6 +27,9 @@
 		public string ThresholdID { get; set; }
 	}
 
+	/// <summary>
+	/// Inter-App Message allowing to edit existing entries from the Ethernet Thresholds table.
+	/// </summary>
 	public class EditEthThreshold : Message
 	{
 		public string ThresholdToUpdateName { get; set; }
@@ -46,6 +52,9 @@
 		public string ThresholdId { get; set; }
 	}
 
+	/// <summary>
+	/// Inter-App Message allowing to delete existing entries from the Ethernet Thresholds table.
+	/// </summary>
 	public class DeleteEthThresholds : Message
 	{
 		public IEnumerable<string> ThresholdToDeleteNames { get; set; }

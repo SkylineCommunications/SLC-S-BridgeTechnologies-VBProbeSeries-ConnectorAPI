@@ -4,6 +4,9 @@
 
 	using Skyline.DataMiner.Core.InterAppCalls.Common.CallSingle;
 
+	/// <summary>
+	/// Inter-App Message allowing to add new entries to the OTT Available Channels table.
+	/// </summary>
 	public class CreateOttChannel : Message
 	{
 		public OttChannelData ChannelData { get; set; }
@@ -24,6 +27,9 @@
 		public string ChannelId { get; set; }
 	}
 
+	/// <summary>
+	/// Inter-App Message allowing to edit existing entries from the OTT Available Channels table.
+	/// </summary>
 	public class EditOttChannel : Message
 	{
 		public string ChannelId { get; set; }
@@ -46,6 +52,9 @@
 		public string ChannelId { get; set; }
 	}
 
+	/// <summary>
+	/// Inter-App Message allowing to delete existing entries from the OTT Available Channels table.
+	/// </summary>
 	public class DeleteOttChannels : Message
 	{
 		public string[] ChannelIds { get; set; }
