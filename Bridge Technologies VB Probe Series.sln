@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectorAPI", "Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries\ConnectorAPI.csproj", "{06AC66D3-A4D1-41E6-92FB-67F0A5EDBE97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConnectorAPI", "ConnectorAPI\ConnectorAPI.csproj", "{06AC66D3-A4D1-41E6-92FB-67F0A5EDBE97}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F7CAB560-3B01-4121-886E-080657752B5F}"
 	ProjectSection(SolutionItems) = preProject
