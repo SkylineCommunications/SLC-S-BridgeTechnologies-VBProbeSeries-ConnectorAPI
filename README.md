@@ -6,7 +6,7 @@ This solution holds the connector API (Inter-App Calls/Messages) for DataMiner e
 
 ## Projects
 
-* For more information about Skyline.DataMiner.ConnectorAPI.BridgeTechnologies.VBProbeSeries, see [Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries/README.md](Utils.ConnectorAPI.BridgeTechnologies.VBProbeSeries/README.md).
+* For more information about Skyline.DataMiner.ConnectorAPI.BridgeTechnologies.VBProbeSeries, see [ConnectorAPI/README.md](ConnectorAPI/README.md).
 
 ### About DataMiner
 
