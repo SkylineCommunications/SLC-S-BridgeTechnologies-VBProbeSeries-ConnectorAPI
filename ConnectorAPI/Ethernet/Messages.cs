@@ -55,6 +55,48 @@
 	}
 
 	/// <summary>
+	/// Inter-App Message allowing to join entries from the Ethernet Available Streams table.
+	/// </summary>
+	public class JoinEthStreams : Message
+	{
+		public string[] StreamKeys { get; set; }
+	}
+
+	public class JoinEthStreamsResult : Message
+	{
+		public bool IsRequestValid { get; set; }
+
+		public string Description { get; set; }
+
+		public JoinEthStreams Request { get; set; }
+
+		public List<string> JoinedKeys { get; set; }
+
+		public List<string> NotFoundKeys { get; set; }
+	}
+
+	/// <summary>
+	/// Inter-App Message allowing to unjoin entries from the Ethernet Available Streams table.
+	/// </summary>
+	public class UnjoinEthStreams : Message
+	{
+		public string[] StreamKeys { get; set; }
+	}
+
+	public class UnjoinEthStreamsResult : Message
+	{
+		public bool IsRequestValid { get; set; }
+
+		public string Description { get; set; }
+
+		public UnjoinEthStreams Request { get; set; }
+
+		public List<string> UnjoinedKeys { get; set; }
+
+		public List<string> NotFoundKeys { get; set; }
+	}
+
+	/// <summary>
 	/// Inter-App Message allowing to delete existing entries from the Ethernet Available Streams table.
 	/// </summary>
 	public class DeleteEthStreams : Message
