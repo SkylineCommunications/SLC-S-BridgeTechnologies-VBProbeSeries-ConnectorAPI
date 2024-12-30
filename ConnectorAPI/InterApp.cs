@@ -50,10 +50,8 @@
 			typeof(EditEthStreamResult),
 			typeof(DeleteEthStreams),
 			typeof(DeleteEthStreamsResult),
-			typeof(JoinEthStreams),
-			typeof(JoinEthStreamsResult),
-			typeof(UnjoinEthStreams),
-			typeof(UnjoinEthStreamsResult),
+			typeof(JoinUnjoinEthStreams),
+			typeof(JoinUnjoinEthStreamsResult),
 
 			// OTT Channels
 			typeof(CreateOttChannel),
