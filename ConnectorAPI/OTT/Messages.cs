@@ -31,7 +31,7 @@
 		public bool IsCreated { get; set; }
 
 		/// <summary>
-		/// Indicates whether there is a full match.
+		/// Indicates whether the newly created channel fully matches with the new channel request data.
 		/// </summary>
 		public bool IsFullMatch { get; set; }
 
@@ -83,7 +83,7 @@
 		public bool IsEdited { get; set; }
 
 		/// <summary>
-		/// Indicates whether there is a full match.
+		/// Indicates whether the channel now fully matches with the requested changes.
 		/// </summary>
 		public bool IsFullMatch { get; set; }
 
